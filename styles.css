@@ -6,7 +6,6 @@
 }
 
 body, html {
-  
   text-align: center;
   background-color: skyblue;
 }
@@ -29,6 +28,7 @@ a {
 .crop {
   width: 300px;
   height: 300px;
+  border-radius: 5%;
   object-fit: cover;
 }
 
