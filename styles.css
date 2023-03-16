@@ -1,13 +1,8 @@
-.center {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 body, html {
   text-align: center;
   background-color: skyblue;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 h1 {
   color: white;
@@ -23,6 +18,10 @@ p {
 
 a {
   color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .crop {
