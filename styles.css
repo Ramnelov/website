@@ -41,9 +41,11 @@ a {
   text-decoration: none;
   margin: 0 2px;
   font-size: 3em;
+
 }
 
 .social-icon:hover {
   color: whitesmoke;
   font-size: 5em;
+
 }
