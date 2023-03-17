@@ -24,23 +24,31 @@ body  {
   border-radius: 0%;
 }
 
-h1 {
-  transition: font-size 0.2s;
-  margin: 20px 0;
+.experience {
+  margin: 0 0 2px 0;
 }
 
-h2 {
-  transition: font-size 0.2s;
-  margin: 5px 0;
-}
-/*
-.h1:hover {
-  font-size: 3em;
+.experience-under {
+  margin: 0 0 2px 0;
 }
 
-.h2:hover {
-  font-size: 1.5em;
-}*/
+.experience-rubric {
+  margin: 0 0 2px 0;
+}
+
+.experience-para {
+  margin: 0 0 0 0;
+  font-size: 12px;
+}
+
+.experience-date {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+p {
+  margin: 0 0 5px 0;
+}
 
 .social-icon {
   transition: color, font-size 0.2s;
@@ -52,7 +60,7 @@ h2 {
 
 .social-icon:hover {
   color: whitesmoke;
-  font-size: 5em;
+  font-size: 3.5em;
 }
 
 .social-icon-line {
