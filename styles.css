@@ -25,11 +25,20 @@ body  {
 }
 
 .experience {
+  margin: 0 0 32px 0;
+}
+
+.experience-name {
   margin: 0 0 2px 0;
 }
 
 .experience-under {
   margin: 0 0 2px 0;
+}
+
+.experience-date {
+  margin: 0 0 10px 0;
+  font-size: 14px;
 }
 
 .experience-rubric {
@@ -39,11 +48,6 @@ body  {
 .experience-para {
   margin: 0 0 5px 0;
   font-size: 12px;
-}
-
-.experience-date {
-  margin: 0 0 10px 0;
-  font-size: 14px;
 }
 
 .social-icon {
