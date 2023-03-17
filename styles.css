@@ -1,23 +1,10 @@
-body, html {
+body  {
+  background-image: linear-gradient(to bottom right, skyblue, white);
   text-align: center;
-  background-color: skyblue;
-  overflow: scroll;
+  /*background-color: skyblue;*/
+  color: white;
+  overflow-y: scroll;
   overflow-x: hidden;
-}
-h1 {
-  color: white;
-}
-
-h3 {
-  color: white;
-}
-
-p {
-  color: white;
-}
-
-a {
-  color: white;
 }
 
 ::-webkit-scrollbar {
@@ -33,36 +20,37 @@ a {
 }
 
 .crop:hover {
-  border-radius: 25%;
+  border-radius: 5%;
 }
 
 .font {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.h1 {
+h1 {
   transition: font-size 0.2s;
   margin: 20px 0;
 }
 
+h2 {
+  transition: font-size 0.2s;
+  margin: 5px 0;
+}
+/*
 .h1:hover {
   font-size: 3em;
 }
 
-.h2 {
-  transition: font-size 0.2s;
-  margin: 5px 0;
-}
-
 .h2:hover {
   font-size: 1.5em;
-}
+}*/
 
 .social-icon {
   transition: color, font-size 0.2s;
   text-decoration: none;
   margin: 0 3px;
   font-size: 3em;
+  color: white;
 }
 
 .social-icon:hover {
