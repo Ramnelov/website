@@ -48,12 +48,13 @@ body  {
 .link {
   transition: color 0.2s;
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 
 }
 
 .link:hover {
   color: whitesmoke;
+  text-decoration: none;
 }
 
 .social-icon:hover {
@@ -104,5 +105,13 @@ body  {
 }
 
 .navigation {
+  transition: color 0.2s;
+  color: white;
+  text-decoration: underline;
+
+}
+
+.navigation:hover {
+  color: whitesmoke;
   text-decoration: none;
 }
