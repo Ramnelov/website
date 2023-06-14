@@ -1,6 +1,6 @@
 /*Entire body*/
 body  {
-  background-image: linear-gradient(to bottom right, skyblue, whitesmoke);
+  background-image: linear-gradient(to bottom right, skyblue, rgb(200, 197, 197));
   /*background-color: skyblue;*/
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -43,6 +43,7 @@ body  {
   margin: 0 3px;
   font-size: 3em;
   color: white;
+  
 }
 
 .link {
