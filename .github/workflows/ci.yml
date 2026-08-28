@@ -13,7 +13,13 @@ concurrency:
 
 jobs:
   validate:
+    name: Validate ${{ matrix.project }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - frontend
 
     steps:
       - name: Check out repository
@@ -33,5 +39,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run checks
-        run: pnpm pre-check
+      - name: Typecheck
+        run: pnpm exec nx run ${{ matrix.project }}:typecheck
+
+      - name: Check dependencies
+        run: pnpm exec nx run ${{ matrix.project }}:deps
+
+      - name: Lint
+        run: pnpm exec nx run ${{ matrix.project }}:lint
+
+      - name: Build
+        run: pnpm exec nx run ${{ matrix.project }}:build
