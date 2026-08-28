@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "nx build frontend",
-    "lint": "nx lint frontend",
-    "test": "nx test frontend",
-    "typecheck": "nx typecheck frontend",
-    "deps": "nx deps frontend",
-    "pre-check": "nx run-many -t typecheck deps lint build --projects=frontend",
-    "pre-commit-check": "nx run-many -t typecheck deps lint --projects=frontend",
+    "build": "nx build frontend && nx build backend",
+    "lint": "nx lint frontend && nx lint backend",
+    "test": "nx test frontend && nx test backend",
+    "typecheck": "nx typecheck frontend && nx typecheck backend",
+    "deps": "nx deps frontend && nx deps backend",
+    "pre-check": "nx run-many -t typecheck deps lint build --projects=frontend,backend",
+    "pre-commit-check": "nx run-many -t typecheck deps lint --projects=frontend,backend",
     "prepare": "husky"
   },
   "devDependencies": {
