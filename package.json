@@ -1,0 +1,19 @@
+{
+  "name": "website-tools",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nx build frontend",
+    "lint": "nx lint frontend",
+    "test": "nx test frontend",
+    "typecheck": "nx typecheck frontend",
+    "deps": "nx deps frontend",
+    "pre-check": "nx run-many -t typecheck deps lint build --projects=frontend",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "knip": "^6.32.3",
+    "nx": "^23.1.2"
+  }
+}
