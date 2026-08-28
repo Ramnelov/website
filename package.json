@@ -9,6 +9,7 @@
     "typecheck": "nx typecheck frontend",
     "deps": "nx deps frontend",
     "pre-check": "nx run-many -t typecheck deps lint build --projects=frontend",
+    "pre-commit-check": "nx run-many -t typecheck deps lint --projects=frontend",
     "prepare": "husky"
   },
   "devDependencies": {
